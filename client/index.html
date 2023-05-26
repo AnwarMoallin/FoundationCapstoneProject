@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link href="./index.css" rel="stylesheet"></link>
+    <title>HappyFeet | Home</title>
+</head>
+
+<body class="bg-green-200">
+    <div class="bg-gray-800 ">
+
+        <nav class="flex justify-between py-6 container mx-auto" >
+                <a href="#" class="flex items-center text-3xl text-gray text-green-300">HappyFeet</a>
+                <ul class="flex">
+                        <li class="mx-2">
+                        <a  class="text-lg text-green-300 duration-200 hover:text-green-700" href="./index.html">Products</a>
+                        </li>
+                        <li class="mx-2">
+                            <a class="text-lg text-green-300 duration-200 hover:text-green-700"  href="./saved-shoes.html">Saved Shoes</a>
+                        </li>
+                </ul>
+        </nav>
+    </div>
+
+
+
+
+    <div >
+        <div class="container mx-auto  my-16" >
+
+            <div class="text-xl">Search for a shoe</div>
+            
+            <div class="flex justify-end items-stretch">
+                <input type="text" class="bg-green-800 text-white w-full  border-black border-2 border-r-0 border-2 rounded-l  py-3 placeholder:text-white xl:container xl:mx-auto" id="searchTerm" placeholder="What are you looking for?">
+                <button class="bg-green-800 text-white border-black border-2 px-2" onclick="searchFun()" >Search</button>
+            </div>
+            <div class="mt-4 mb-16">
+                <button class="bg-green-800 px-3 py-1 rounded border-2 border-black text-white" onclick="window.location.replace('./add.html')">Add Shoes</button>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 container mx-auto " id="card-cont">
+
+        </div>
+
+
+    </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
